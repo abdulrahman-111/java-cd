@@ -12,10 +12,10 @@ spec:
       app: java
       type: cd
     metadata:
-    name: java-pods
-    labels:
-      app: java
-      type: cd
+      name: java-pods
+      labels:
+        app: java
+        type: cd
     spec:
       containers:
       - name: java-container
