@@ -1,0 +1,25 @@
+# voting app 
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: java-app-depoy
+  labels:
+    app: java-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: java
+      type: cd
+    metadata:
+    name: java-pods
+    labels:
+      app: java
+      type: cd
+    spec:
+      containers:
+      - name: java-container
+        image: abdulrahman011/java-app:v32
+        ports:
+        - containerPort: 8090
+      
