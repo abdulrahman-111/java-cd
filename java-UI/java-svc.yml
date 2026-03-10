@@ -10,7 +10,7 @@ spec:
   ports:
     - targetPort: 8090
       port: 8090
-      nodePort: 300022
+      nodePort: 30022
   selector:
     app: java
     type: cd
